@@ -1,4 +1,4 @@
-package core;
+package core.matrix;
 
 import java.util.ArrayList;
 

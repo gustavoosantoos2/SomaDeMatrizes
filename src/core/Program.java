@@ -6,6 +6,10 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.List;
 
+import core.matrix.MatrixCalculator;
+import core.matrix.MatrixParser;
+import core.utils.StringUtils;
+
 public class Program {
 
 	public static void main(String[] args) {

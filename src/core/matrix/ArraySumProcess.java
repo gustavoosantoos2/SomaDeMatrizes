@@ -1,4 +1,4 @@
-package core;
+package core.matrix;
 
 public class ArraySumProcess implements Runnable {
 	
