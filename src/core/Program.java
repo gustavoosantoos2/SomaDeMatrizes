@@ -18,7 +18,7 @@ public class Program {
 			while ((inputLine = bufReader.readLine()) != null)
 				userInput += inputLine + "\n";
 
-			String[] parsedLines = parseLines(userInput);
+			String[] parsedLines = StringUtils.parseToArray(userInput);
 			String[] matricesLines = Arrays.copyOfRange(parsedLines, 1, parsedLines.length);
 
 			int matrixDimensions = Integer.parseInt(parsedLines[0]);
@@ -32,9 +32,5 @@ public class Program {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-	}
-
-	private static String[] parseLines(String fullText) {
-		return fullText.split("\\r?\\n");
 	}
 }
