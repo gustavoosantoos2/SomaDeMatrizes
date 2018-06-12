@@ -15,7 +15,7 @@ public class Program {
 
 		String userInput = "";
 		String inputLine = null;
-		try {
+		try { 
 			while ((inputLine = bufReader.readLine()) != null)
 				userInput += inputLine + "\n";
 
