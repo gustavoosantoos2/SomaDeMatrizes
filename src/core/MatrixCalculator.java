@@ -8,7 +8,7 @@ public class MatrixCalculator {
 		double[][] sum = new double[matrix1.length][matrix1[0].length];
 
 		for (int i = 0; i < sum.length; i++) {
-			Thread t = new Thread(new ArraySumThread(matrix1[i], matrix2[i], i, sum));
+			Thread t = new Thread(new ArraySumProcess(matrix1[i], matrix2[i], i, sum));
 			t.start();
 			threads.add(t);
 		}

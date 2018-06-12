@@ -1,13 +1,13 @@
 package core;
 
-public class ArraySumThread implements Runnable {
+public class ArraySumProcess implements Runnable {
 	
 	private double[] linha1;
 	private double[] linha2;
 	private int lineNumber;
 	private double[][] target;
 
-	public ArraySumThread(double[] linha1, double[] linha2, int lineNumber, double[][] target) {
+	public ArraySumProcess(double[] linha1, double[] linha2, int lineNumber, double[][] target) {
 		this.linha1 = linha1;
 		this.linha2 = linha2;
 		this.lineNumber = lineNumber;
