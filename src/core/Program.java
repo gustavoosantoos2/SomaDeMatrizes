@@ -8,6 +8,7 @@ import java.util.List;
 
 import core.matrix.MatrixCalculator;
 import core.matrix.MatrixParser;
+import core.utils.PrintFormatMatrix;
 import core.utils.StringUtils;
 
 public class Program {
@@ -15,7 +16,6 @@ public class Program {
 	public static void main(String[] args) {
 		InputStreamReader isReader = new InputStreamReader(System.in);
 		BufferedReader bufReader = new BufferedReader(isReader);
-
 		String userInput = "";
 		String inputLine = null;
 		try { 
@@ -27,11 +27,10 @@ public class Program {
 
 			int matrixDimensions = Integer.parseInt(parsedLines[0]);
 
-			List<double[][]> matrices = MatrixParser.parse(matricesLines, matrixDimensions);
+			List<double[][]> matrices = MatrixParser.parse(matricesLines, matrixDimensions);			
 			double[][] sumResult = MatrixCalculator.sum(matrices.get(0), matrices.get(1));
 			
-			for(int linha = 0; linha < sumResult.length; linha++)
-				System.out.println(Arrays.toString(sumResult[linha]));
+			PrintFormatMatrix.printMatrix(sumResult);
 
 		} catch (IOException e) {
 			e.printStackTrace();
