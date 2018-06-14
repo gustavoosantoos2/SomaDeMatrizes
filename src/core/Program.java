@@ -18,6 +18,7 @@ public class Program {
 		BufferedReader bufReader = new BufferedReader(isReader);
 		String userInput = "";
 		String inputLine = null;
+	
 		try { 
 			while ((inputLine = bufReader.readLine()) != null)
 				userInput += inputLine + "\n";
@@ -31,7 +32,6 @@ public class Program {
 			double[][] sumResult = MatrixCalculator.sum(matrices.get(0), matrices.get(1));
 			
 			PrintFormatMatrix.printMatrix(sumResult);
-
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
